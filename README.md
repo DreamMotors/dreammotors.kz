@@ -1,1 +1,1 @@
-# dreammotors.kz
+# dreammotors-kz
