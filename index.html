@@ -27,7 +27,7 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-window-close" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="CATALOG.html">КАТАЛОГ</a></li>
+                        <li><i class="fa fa-car"></i><a href="CATALOG.html">КАТАЛОГ</a></li>
                         <li><i class="fa fa-phone"></i><a href="https://api.whatsapp.com/send/?phone=77073847135">+7 707-384-71-35</a></li>
                     </ul>
             </div>
@@ -150,7 +150,8 @@
             <h1>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h1>
         <div class="faq-item">
             <input class="faq-input" type="checkbox" name="faq" id="faq_1"></input>
-            <label class="faq-title" for="faq_1">СКОЛЬКО СТОЯТ НАШИ УСЛУГИ ?</label>
+            <label class="faq-title" for="faq_1">СКОЛЬКО СТОЯТ НАШИ УСЛУГИ ?
+            <div class="faq-button"></div></label>
             
             <p class="faq-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -159,11 +160,34 @@
         </div>
         <div class="faq-item">
             <input class="faq-input" type="checkbox" name="faq" id="faq_2">
-            <label class="faq-title" for="faq_2">УМНЫЙ ВОПРОС ВОТ СЮДА?</label>
+            <label class="faq-title" for="faq_2">КАКИЕ УСЛУГИ ПРЕДЛАГАЕТ DREAM MOTORS.KZ ?
+                <div class="faq-button"></div>
+            </label>
             
             <p class="faq-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. 
+                Dream Motors предлагает комплекс услуг, включая заказ автомобилей из Дубая и Кореи, профессиональный поиск и подбор автомобилей, надежную логистику, а также индивидуальные и групповые автотуры.
+            </p>
+
+        </div>
+        <div class="faq-item">
+            <input class="faq-input" type="checkbox" name="faq" id="faq_3">
+            <label class="faq-title" for="faq_3">Предлагает ли Dream Motors.kz индивидуальные и групповые автотуры ?
+                <div class="faq-button"></div>
+            </label>
+            
+            <p class="faq-text">
+                Да, Dream Motors предлагает индивидуальные и групповые автотуры.
+            </p>
+
+        </div>
+        <div class="faq-item">
+            <input class="faq-input" type="checkbox" name="faq" id="faq_4">
+            <label class="faq-title" for="faq_4">Могу ли я получить квалифицированную услугу по поиску и подбору автомобилей от Dream Motors?
+                <div class="faq-button"></div>
+            </label>
+            
+            <p class="faq-text">
+                Да, Dream Motors предлагает профессиональные услуги по поиску и подбору автомобилей. 
 
             </p>
 
@@ -229,10 +253,10 @@
                         <a href="dream.html" class="text-white" style="text-decoration: none;">Автомобили с пробегом</a>
                     </p>
                     <p>
-                        <a href="dream.html" class="text-white" style="text-decoration: none;">Ремонт Б/У автомобилей</a>
+                        <a href="dream.html" class="text-white" style="text-decoration: none;">Убитые Автомобили</a>
                     </p>
                     <p>
-                        <a href="dream.html" class="text-white" style="text-decoration: none;">Контроль доставки до двери</a>
+                        <a href="dream.html" class="text-white" style="text-decoration: none;">Автомобили без дверей</a>
                     </p>
                 </div>
 
@@ -261,7 +285,7 @@
         } 
         function hideMenu(){
             navLinks.style.transition = "0.8s";
-            navLinks.style.right = "-200px";
+            navLinks.style.right = "-240px";
             navLinks.style.overflow = "hidden";
         } 
     </script>
