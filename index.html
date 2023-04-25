@@ -18,9 +18,9 @@
     
 </head>
 <body>
-    <div id="preloader">
+    <div id="loader"></div>
+    <div id="content">
 
-    </div>
     <section class="header">
         <nav>
             <a href="index.html"><img src="img/ak.webp"></a>
@@ -70,7 +70,6 @@
             </div>
             </div>
 
-        </div>
     </section>
       <!----------------------Slider-Catalog------------------>
     <section class="catalog-slider">
@@ -86,48 +85,48 @@
 
                 <div class="slide s1">
                     <section class="cat" id="Cat">
-                        <h1>Выгода - XX(нужный процент) %</h1>
+                        <h1>Выгода - 30%</h1>
                         <div class="catalog-car">
                         <img src="img/elentra2023.webp">
                         <div class="car-disc"><h1>HUYNDAI ELANTRA 2023</h1></div>
-                        <div class="car-disc"><h2>Цена на рынке:$$$$</h2></div>
-                        <div class="car-disc"><h3>Цена у DREAM motors.kz:$$$$</h3></div>
+                        <div class="car-disc"><h2>Цена на рынке: 13.000.000 тг</h2></div>
+                        <div class="car-disc"><h3>Цена у DREAM motors.kz: 10.900.000 млн</h3></div>
                         </div>
 
                     </section>
                 </div>
                 <div class="slide">
                     <section class="cat" id="Cat">
-                        <h1>Выгода - XX(нужный процент) %</h1>
+                        <h1>Выгода - 20%</h1>
                         <div class="catalog-car">
                         <img src="img/2021hightoyota.webp">
                         <div class="car-disc"><h1>TOYOTA HIGHLANDER 2023</h1></div>
-                        <div class="car-disc"><h2>Цена на рынке:$$$$</h2></div>
-                        <div class="car-disc"><h3>Цена у DREAM motors.kz:$$$$</h3></div>
+                        <div class="car-disc"><h2>Цена на рынке: 35.000.000 тг</h2></div>
+                        <div class="car-disc"><h3>Цена у DREAM motors.kz: 29.000.000 тг</h3></div>
                         </div>
 
                     </section>
                 </div>
                 <div class="slide">
                     <section class="cat" id="Cat">
-                        <h1>Выгода - XX(нужный процент) %</h1>
+                        <h1>Выгода - 20%</h1>
                         <div class="catalog-car">
                         <img src="img/k5-png.webp">
                         <div class="car-disc"><h1>KIA K5 2022</h1></div>
-                        <div class="car-disc"><h2>Цена на рынке:$$$$</h2></div>
-                        <div class="car-disc"><h3>Цена у DREAM motors.kz:$$$$</h3></div>
+                        <div class="car-disc"><h2>Цена на рынке: 17.000.000 тг</h2></div>
+                        <div class="car-disc"><h3>Цена у DREAM motors.kz: 13.900.000 тг</h3></div>
                         </div>
 
                     </section>
                 </div>
                 <div class="slide">
                     <section class="cat" id="Cat">
-                        <h1>Выгода - XX(нужный процент) %</h1>
+                        <h1>Выгода - 20%</h1>
                         <div class="catalog-car">
                         <img src="img/23_Camry_XSE_CavalryBlue_1.webp">
                         <div class="car-disc"><h1>TOYOTA CAMRY LE 2023</h1></div>
-                        <div class="car-disc"><h2>Цена на рынке:$$$$</h2></div>
-                        <div class="car-disc"><h3>Цена у DREAM motors.kz:$$$$</h3></div>
+                        <div class="car-disc"><h2>Цена на рынке: 21.000.000 тг</h2></div>
+                        <div class="car-disc"><h3>Цена у DREAM motors.kz: 18.000.000 тг</h3></div>
                         </div>
 
                     </section>
@@ -154,8 +153,7 @@
             <div class="faq-button"></div></label>
             
             <p class="faq-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. 
+                Наши услуги в зависимости сложности заказа могут стоить 250.000-400.000тг.
             </p>
         </div>
         <div class="faq-item">
@@ -221,6 +219,7 @@
            </section>
 
         <!----------------------Review-end------------------>
+         <!-------------------------Footer---------------->
 
     <section class="otziv">
         <h1>Отзывы от других клиентов можете посмотреть в актуальном историй в инстаграмме</h1>
@@ -253,10 +252,10 @@
                         <a href="dream.html" class="text-white" style="text-decoration: none;">Автомобили с пробегом</a>
                     </p>
                     <p>
-                        <a href="dream.html" class="text-white" style="text-decoration: none;">Убитые Автомобили</a>
+                        <a href="dream.html" class="text-white" style="text-decoration: none;">Ремонт Б/У автомобилей</a>
                     </p>
                     <p>
-                        <a href="dream.html" class="text-white" style="text-decoration: none;">Автомобили без дверей</a>
+                        <a href="dream.html" class="text-white" style="text-decoration: none;">Контроль доставки до двери</a>
                     </p>
                 </div>
 
@@ -273,8 +272,9 @@
             
         </div>
     </footer>
-
-   
+    </div>
+    
+    <!----------------------Scripts------------------>
     <script>
         var navLinks = document.getElementById("navLinks")
         function showMenu(){
@@ -289,13 +289,31 @@
             navLinks.style.overflow = "hidden";
         } 
     </script>
-    <script>
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.animation = "fade1 4s ease-in-out" ;
-            loader.style.display = "none";
-        })
+    <script type="text/javascript">
+
+        var loader;
+        function loadNow(opacity){
+            if(opacity <= 0){
+                displayContent();
+            }
+            else{
+                loader.style.opacity = opacity;
+                window.setTimeout(function(){
+                    loadNow(opacity - 0.1)
+                }, 100);
+            }
+        }
+
+        function displayContent(){
+            loader.style.display='none';
+            document.getElementById('content').style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function(){
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
     </script>
+    
     
 </body>
 </html>
