@@ -717,14 +717,3 @@ color:#FFF;
     }
 }
 
-
-@keyframes fade1 {
-    0%   { 
-        opacity: 1;
-         
-  
- }
-    100% { 
-        opacity: 0;
-    }
-}
