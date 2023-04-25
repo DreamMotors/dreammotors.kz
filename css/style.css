@@ -6,6 +6,9 @@
 .body {
     -webkit-text-size-adjust: 100%;
 }
+#content{
+    display: none;
+}
 
 .header{
 
@@ -199,7 +202,7 @@ h1{
 
 .uslugi-col{
     flex-basis: 31%;
-    background: whitesmoke;
+    background: ghostwhite;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -289,6 +292,7 @@ h3{
 .car-disc h2{
     margin-top: 200px;
     text-align: center;
+    color: darkred;
 }
 .car-disc h3{
     font-size: 35px;
@@ -698,20 +702,22 @@ z-index: 100;
 margin-top:13px;
 color:#FFF;
 }
-#preloader{
+#loader{
     background: rgb(215, 209, 201) url(../img/preloader.gif) no-repeat center center;
     background-size: 25%;
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 100;
-    opacity: 1;
-    animation: fade1 4s ease-in-out;
+    overflow: visible;
+    z-index: 10000;
 }
-#load{
-    display: none;
-    
+@media screen and (max-width: 700px){
+    #loader{
+        background-size: 75%;
+    }
 }
+
+
 @keyframes fade1 {
     0%   { 
         opacity: 1;
